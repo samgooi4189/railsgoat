@@ -56,7 +56,7 @@ group :development, :test, :mysql do
   gem "test-unit"
 end
 
-group :openshift do
+group :openshift, :production do
   gem "pg"
 end
 
