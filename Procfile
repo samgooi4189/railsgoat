@@ -1,1 +1,1 @@
-web: rvmsudo bundle exec unicorn -p 9000
+web: bundle exec puma -t 5:5 -p ${PORT:-3000} -e ${RACK_ENV:-production}
