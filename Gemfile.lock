@@ -316,7 +316,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.1)
     test-unit (3.3.4)
       power_assert
     therubyracer (0.12.3)
@@ -384,7 +383,6 @@ DEPENDENCIES
   ruby-prof
   sassc-rails
   simplecov
-  sqlite3
   test-unit
   therubyracer
   travis-lint
