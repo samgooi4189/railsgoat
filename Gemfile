@@ -23,11 +23,11 @@ gem "responders" #For Rails 4.2 # LOCKED DOWN
 gem "ruby-prof"
 gem "sassc-rails"
 gem "simplecov", require: false, group: :test
-gem "sqlite3"
 gem "therubyracer"
 gem "turbolinks"
 gem "uglifier"
 gem "unicorn"
+gem "pg"
 
 # Add SMTP server support using MailCatcher
 # NOTE: https://github.com/sj26/mailcatcher#bundler
@@ -48,16 +48,13 @@ group :development, :mysql do
 end
 
 group :development, :test, :mysql do
+  gem "sqlite3"
   gem "capybara"
   gem "database_cleaner"
   gem "launchy"
   gem "poltergeist"
   gem "rspec-rails", '4.0.0.beta3' # 4/26/2019: LOCKED DOWN
   gem "test-unit"
-end
-
-group :openshift, :production do
-  gem "pg"
 end
 
 group :mysql do
