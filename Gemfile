@@ -28,6 +28,7 @@ gem "turbolinks"
 gem "uglifier"
 gem "unicorn"
 gem "pg"
+#gem "sqlite3"
 
 # Add SMTP server support using MailCatcher
 # NOTE: https://github.com/sj26/mailcatcher#bundler
@@ -48,7 +49,6 @@ group :development, :mysql do
 end
 
 group :development, :test, :mysql do
-  gem "sqlite3"
   gem "capybara"
   gem "database_cleaner"
   gem "launchy"
